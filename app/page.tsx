@@ -6,27 +6,25 @@ import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import CTASection from "@/components/CTASection/CTASection";
 import MarqueeStrip from "@/components/MarqueeStrip/MarqueeStrip";
+import ServiceAreas from "@/components/ServiceAreas/ServiceAreas";
 import { PROJECTS } from "@/lib/constants";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, homepageFaqJsonLd, KEYWORDS } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Best Interior Designer Hyderabad | Gachibowli, Madhapur, HITEC City, LB Nagar, Uppal",
-  description: "Vinay Interiors — Hyderabad's #1 interior design & architecture studio. Premium modular kitchens, wardrobes, false ceilings, office interiors & home automation. Serving Gachibowli, Madhapur, HITEC City, Raidurg, LB Nagar, Nagole, Uppal, Saroornagar, Kothapet. 200+ projects. Free consultation.",
+  title: "Best Interior Designer Hyderabad | Gachibowli, Madhapur, Kondapur, Miyapur, Bachupally, Financial District",
+  description: "Vinay Interiors — Hyderabad's #1 interior design & architecture studio since 2014. Modular kitchens, wardrobes, false ceilings, office interiors & home automation. Serving Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally, Tellapur, Financial District, Nanakaramguda, Nallagandla & Manikonda. 200+ projects. Free consultation — Call +91 9866618370.",
   path: "/",
-  keywords: [
-    "interior designer Hyderabad", "best interior designer Hyderabad", "interior design Hyderabad",
-    "home interior design Hyderabad", "luxury interior design Hyderabad",
-    "modular kitchen Hyderabad", "false ceiling Hyderabad", "wardrobes Hyderabad",
-    "interior designer Gachibowli", "interior designer Madhapur", "interior designer HITEC City",
-    "interior designer Raidurg", "interior designer LB Nagar", "interior designer Nagole",
-    "interior designer Uppal", "interior designer Saroornagar", "interior designer Kothapet",
-    "Vinay Interiors", "turnkey interior design Hyderabad", "architecture firm Hyderabad",
-  ],
+  keywords: KEYWORDS,
 });
 
 export default function Home() {
   return (
     <>
+      {/* FAQ rich-result schema — powers Google rich snippets in search results */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqJsonLd) }}
+      />
       <Hero />
       <MarqueeStrip />
       <ProjectGrid projects={PROJECTS.slice(0, 4)} />
@@ -34,6 +32,7 @@ export default function Home() {
       <MarqueeStrip />
       <ServicesSection />
       <Testimonials />
+      <ServiceAreas />
       <CTASection />
     </>
   );

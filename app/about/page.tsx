@@ -8,15 +8,21 @@ import TeamCard from "@/components/TeamCard/TeamCard";
 
 
 export const metadata: Metadata = buildMetadata({
-  title: "About Vinay Interiors | Premium Interior Design Studio Hyderabad Since 2014",
-  description: "Vinay Interiors — Hyderabad's award-winning interior design studio founded in 2014. 200+ premium residential & commercial projects across Gachibowli, Madhapur, HITEC City, Raidurg, LB Nagar, Nagole, Uppal, Saroornagar, Kothapet and all of Hyderabad.",
+  title: "About Vinay Interiors | Award-Winning Interior Design Studio Hyderabad Since 2014",
+  description: "Vinay Interiors — Hyderabad's award-winning interior design & architecture studio founded in 2014. 200+ premium residential & commercial projects across Gachibowli, Madhapur, HITEC City, Kondapur, Miyapur, Bachupally, Tellapur, Financial District, Nanakaramguda, Nallagandla, Manikonda and all of Hyderabad.",
   path: "/about",
   keywords: [
-    "about Vinay Interiors", "interior design studio Hyderabad", "best interior designer Hyderabad",
-    "interior design firm Hyderabad", "residential interior designer Hyderabad",
-    "commercial interior designer Hyderabad", "architecture studio Hyderabad",
-    "interior design studio Gachibowli", "interior design studio Madhapur",
-    "interior designer HITEC City", "interior design Telangana",
+    "about Vinay Interiors", "Vinay Interiors Hyderabad", "interior design studio Hyderabad",
+    "best interior designer Hyderabad", "top interior design firm Hyderabad",
+    "residential interior designer Hyderabad", "commercial interior designer Hyderabad",
+    "architecture studio Hyderabad", "interior design studio Gachibowli",
+    "interior design studio Madhapur", "interior designer HITEC City",
+    "interior designer Kondapur", "interior designer Miyapur",
+    "interior designer Bachupally", "interior designer Tellapur",
+    "interior designer Financial District Hyderabad", "interior designer Nanakaramguda",
+    "interior designer Nallagandla", "interior designer Manikonda",
+    "interior design Telangana", "interior design studio since 2014 Hyderabad",
+    "luxury interior designer Hyderabad", "premium interior design studio Hyderabad",
   ],
 });
 

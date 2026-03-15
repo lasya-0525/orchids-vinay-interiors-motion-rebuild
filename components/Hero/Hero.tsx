@@ -44,6 +44,12 @@ export default function Hero() {
           inset: 0,
           background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.6) 100%)",
         }} />
+        {/* Extra top gradient to keep navbar/logo area clean */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          background: "linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.35) 20%, transparent 40%)",
+        }} />
       </motion.div>
 
       {/* ── CONTENT ───────────────────────────────────────── */}

@@ -9,7 +9,7 @@
   import CursorFollower from "@/components/CursorFollower/CursorFollower";
   import Providers from "@/components/Providers";
   import FloatingCall from "@/components/FloatingCall/FloatingCall";
-  import { defaultMetadata, organizationJsonLd } from "@/lib/seo";
+  import { defaultMetadata, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 
   const inter = Inter({
     subsets: ["latin"],
@@ -33,6 +33,10 @@
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
           />
         </head>
         <body className="antialiased">
